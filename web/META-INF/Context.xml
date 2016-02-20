@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/PerformanceAppraisal">
+    <Resource
+            name="jdbc/PerformanceAppraisal" auth="Container"
+            type="javax.sql.DataSource"
+            maxTotal="100"
+            maxIdle="30"
+            maxWaitMillis="10000"
+            initialSize="8"
+            url="jdbc:mysql://localhost/company?UseUnicode=true&amp;characterEncoding=utf8"
+            username="root"
+            password="root"
+            driverClassName="com.mysql.jdbc.Driver"
+            />
+</Context>
+

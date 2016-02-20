@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - company@localhost" uuid="16c5ede3-e510-4e1b-8cb4-34f1a3680436">
+    <database-info product="MySQL" version="5.5.10" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <schema name="" catalog="company"/>
+    <table name="employee" schema="" catalog="company" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="name" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <column name="lastname" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <column name="mobile" sqlType="VARCHAR" precision="15" scale="0" nullable="true" jdbcType="12"/>
+      <column name="position" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="login" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <column name="password" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <column name="isSuperior" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6"/>
+      <column name="isCeo" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="structure" schema="" catalog="company" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="title" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <column name="department" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <column name="position" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <column name="jobDescription" sqlType="LONGTEXT" precision="2147483647" scale="0" nullable="true" jdbcType="-1"/>
+      <column name="salary" sqlType="DOUBLE" precision="7" scale="2" nullable="false" jdbcType="8"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="taskarchive" schema="" catalog="company" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="employee" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="level" sqlType="ENUM" precision="10" scale="0" nullable="false" jdbcType="1"/>
+      <column name="description" sqlType="VARCHAR" precision="200" scale="0" nullable="false" jdbcType="12"/>
+      <column name="quanPlan" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="quanFact" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="start" sqlType="DATE" precision="10" scale="0" nullable="false" jdbcType="91"/>
+      <column name="end" sqlType="DATE" precision="10" scale="0" nullable="false" jdbcType="91"/>
+      <column name="performance" sqlType="DOUBLE" precision="3" scale="2" nullable="false" jdbcType="8"/>
+      <column name="bonus" sqlType="DOUBLE" precision="10" scale="2" nullable="false" jdbcType="8"/>
+      <column name="implementor" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="title" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <column name="weight" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+    </table>
+    <table name="tasks" schema="" catalog="company" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="title" sqlType="VARCHAR" precision="100" scale="0" nullable="true" jdbcType="12"/>
+      <column name="level" sqlType="ENUM" precision="10" scale="0" nullable="true" jdbcType="1"/>
+      <column name="description" sqlType="VARCHAR" precision="200" scale="0" nullable="true" jdbcType="12"/>
+      <column name="quanPlan" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="quanFact" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="start" sqlType="DATE" precision="10" scale="0" nullable="false" jdbcType="91"/>
+      <column name="end" sqlType="DATE" precision="10" scale="0" nullable="false" jdbcType="91"/>
+      <column name="performance" sqlType="DOUBLE" precision="10" scale="2" nullable="true" jdbcType="8"/>
+      <column name="bonus" sqlType="DOUBLE" precision="10" scale="2" nullable="true" jdbcType="8"/>
+      <column name="implementer" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="weight" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="ratio" sqlType="DOUBLE" precision="5" scale="2" nullable="true" jdbcType="8"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+  </data-source>
+</component>
